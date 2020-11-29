@@ -3,9 +3,9 @@ const express = require('express');
 const router = express.Router();
 
 // Controllers
-const loginController = require('../controllers/login')
+const homeController = require('../controllers/home')
 
 // Receives the index page
-router.use('/',loginController.showLogin);
+router.use('/',homeController.showHome);
 
 module.exports = router;

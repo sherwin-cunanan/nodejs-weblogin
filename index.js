@@ -28,11 +28,15 @@ if (config.get('debug_mode')) {
   chalk.green(debugServer('Morgan Enabled ...'));
 }
 
-const loginRoutes = require('./routes/login');
-
+const loginRoute = require('./routes/login');
+const homeRoute = require('./routes/home');
+const logoutRoute = require('./routes/logout');
 
 /* Routes */
-app.use('/',loginRoutes);
+app.use('/home',homeRoute);
+app.use('/logout',logoutRoute);
+app.use('/',loginRoute);
+
 
 /* Server */
 app.listen(config.get('port'), () => console.log(`listening on ${config.get('host')}:${chalk.green(config.get('port'))}`));
