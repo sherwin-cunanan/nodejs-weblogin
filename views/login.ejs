@@ -1,0 +1,23 @@
+<%- include('head.ejs') %>  
+
+<link rel="stylesheet" href="css/signin.css" >
+</head>
+
+<body class="text-center">
+    <form class="form-signin">
+        <img class="mb-4" src="img/ijahwin_logo_big.jpg" alt="" width="72" height="72">
+        <h1 class="h3 mb-3 font-weight-normal"><%= login_header %></h1>
+        <label for="<%= user_field %>" class="sr-only"><%= user_desc %></label>
+        <input type="<%= user_type %>" id="<%= user_field %>" class="form-control" placeholder="<%= user_desc %>" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Please provide your password" required>
+        <div class="checkbox mb-3">
+            <label>
+            <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Log in</button>
+        <p class="mt-5 mb-3">&copy; <%= company_name%></p>
+    </form>
+
+<%- include('tail.ejs') %>  

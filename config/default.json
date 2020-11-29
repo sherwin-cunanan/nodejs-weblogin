@@ -1,0 +1,11 @@
+{
+    "name":"Web Login Interface",
+    "debug_mode": false,
+    "loginParams": {
+        "login_header":"Web Interface Login",
+        "company_name": "Elisheato Systems 2020",
+        "user_type":"email",        // i.e. text, email, number
+        "user_field":"email",       // e.g. userName, email, userID 
+        "user_desc": "Please enter your Email"     // i.e. Display in text box
+    }
+}
